@@ -2,6 +2,7 @@
   "expo": {
     "name": "GloApp-Fitness",
     "slug": "GloApp-Fitness",
+    "scheme": "workouts",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +19,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.reynzilani.GloAppFitness"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "314724d6-72f9-4175-a3f4-5df8ed7fa9ca"
+      }
     }
   }
 }
